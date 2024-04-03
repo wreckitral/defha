@@ -19,7 +19,6 @@ import disc02 from "./disc-02.svg";
 import chromecast from "./chrome-cast.svg";
 import sliders04 from "./sliders-04.svg";
 import loading from "./loading.png";
-import background from "./background.jpg";
 
 import curve from "./hero/curve.png";
 import robot from "./hero/robot.jpg";
@@ -75,8 +74,12 @@ import instagram from "./socials/instagram.svg";
 import telegram from "./socials/telegram.svg";
 import twitter from "./socials/twitter.svg";
 
+import banner from "./banner-depa.png"
+import background from "./background-depa.png"
+
 export {
   brainwave,
+  banner,
   check,
   check2,
   loading1,
