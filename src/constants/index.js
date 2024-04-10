@@ -1,329 +1,199 @@
 import {
-  benefitIcon1,
-  benefitIcon2,
-  benefitIcon3,
-  benefitIcon4,
-  benefitImage2,
-  chromecast,
-  disc02,
-  discord,
-  discordBlack,
-  facebook,
-  figma,
-  file02,
-  framer,
-  homeSmile,
-  instagram,
-  notification2,
-  notification3,
-  notification4,
-  notion,
-  photoshop,
-  plusSquare,
-  protopie,
-  raindrop,
-  recording01,
-  recording03,
-  roadmap1,
-  roadmap2,
-  roadmap3,
-  roadmap4,
-  searchMd,
-  slack,
-  sliders04,
-  telegram,
-  twitter,
-  yourlogo,
+    gobank,
+    toolbox,
+    todo,
+    skillsBg,
+    teamwork,
+    lightning,
+    communication,
+    nodejs,
+    golang,
+    dsa,
+    database,
+    virtualization,
+    debug
 } from "../assets";
 
 export const navigation = [
-  {
-    id: "0",
-    title: "Projects",
-    url: "#projects", 
-  },
-  {
-    id: "1",
-    title: "On-going",
-    url: "#on-going",
-  },
-  {
-    id: "2",
-    title: "Skills",
-    url: "#skills",
-  },
-  {
-    id: "3",
-    title: "Contacts",
-    url: "#contacts",
-    onlyMobile: true
-  },
-  //{
-  //  id: "4",
-  //  title: "New account",
-  //  url: "#signup",
-  //  onlyMobile: true,
-  //},
-  //{
-  //  id: "5",
-  //  title: "Sign in",
-  //  url: "#login",
-  //  onlyMobile: true,
-  //},
+    {
+        id: "0",
+        title: "Projects",
+        url: "#projects", 
+    },
+    {
+        id: "1",
+        title: "Skills",
+        url: "#skills",
+    },
+    {
+        id: "2",
+        title: "Dev-Tools",
+        url: "#dev-tools",
+    },
+    {
+        id: "3",
+        title: "Contacts",
+        url: "#contacts",
+        onlyMobile: true
+    },
+    {
+        id: "4",
+        title: "Other",
+        url: "#other",
+        onlyMobile: true
+    },
 ];
 
-export const heroIcons = [homeSmile, file02, searchMd, plusSquare];
-
-export const notificationImages = [notification4, notification3, notification2];
-
-export const companyLogos = [yourlogo, yourlogo, yourlogo, yourlogo, yourlogo];
-
-export const brainwaveServices = [
-  "Photo generating",
-  "Photo enhance",
-  "Seamless Integration",
+export const projects = [
+    {
+        id: "4",
+        title: "Compiler",
+        text: "A Compiler",
+        date: "-- 2024",
+        status: "progress",
+        imageUrl: gobank,
+    },
+    {
+        id: "3",
+        title: "UNTI Center",
+        text: "Student Center for Infomatics Student UNSRI ",
+        date: "-- 2024",
+        status: "progress",
+        imageUrl: gobank,
+    },
+    {
+        id: "0",
+        title: "GO BANK",
+        text: "API service for bank account management",
+        date: "Feb 2024",
+        status: "done",
+        imageUrl: gobank,
+        projectUrl: "https://github.com/wreckitral/go-bank",
+        colorful: true,
+    },
+    {
+        id: "1",
+        title: "Todo CLI",
+        text: "Todo app on terminal made by using golang",
+        date: "Jan 2023",
+        status: "done",
+        projectUrl: "https://github.com/wreckitral/todo-cli",
+        imageUrl: todo,
+        colorful: true
+    },
+    {
+        id: "2",
+        title: "Toolbox CLI",
+        text: "CLI app that contains bundle of toolbox to help things related to your pc",
+        date: "Jan 2024",
+        status: "done",
+        projectUrl: "https://github.com/wreckitral/toolbox-cli",
+        imageUrl: toolbox,
+        colorful: true
+    },
 ];
 
-export const brainwaveServicesIcons = [
-  recording03,
-  recording01,
-  disc02,
-  chromecast,
-  sliders04,
+export const contacts = [
+    {
+        id: "0",
+        title: "Email",
+        description: "Reach me anytime, open for any opportunity",
+        link: "#",
+        button: "Contact Me"
+    },
+    {
+        id: "1",
+        title: "Linkedin",
+        description: "Feel free to connect",
+        link: "#",
+        button: "Connect"
+    },
+    {
+        id: "2",
+        title: "Github",
+        description: "Welcome for suggestions, lesson, and learning",
+        link: "#",
+        button: "Follow"
+    },
 ];
 
-export const roadmap = [
-  {
-    id: "0",
-    title: "Voice recognition",
-    text: "Enable the chatbot to understand and respond to voice commands, making it easier for users to interact with the app hands-free.",
-    date: "May 2023",
-    status: "done",
-    imageUrl: roadmap1,
-    colorful: true,
-  },
-  {
-    id: "1",
-    title: "Gamification",
-    text: "Add game-like elements, such as badges or leaderboards, to incentivize users to engage with the chatbot more frequently.",
-    date: "May 2023",
-    status: "progress",
-    imageUrl: roadmap2,
-  },
-  {
-    id: "2",
-    title: "Chatbot customization",
-    text: "Allow users to customize the chatbot's appearance and behavior, making it more engaging and fun to interact with.",
-    date: "May 2023",
-    status: "done",
-    imageUrl: roadmap3,
-  },
-  {
-    id: "3",
-    title: "Integration with APIs",
-    text: "Allow the chatbot to access external data sources, such as weather APIs or news APIs, to provide more relevant recommendations.",
-    date: "May 2023",
-    status: "progress",
-    imageUrl: roadmap4,
-  },
+export const skills = [
+    {
+        id: "0",
+        title: "Communication",
+        text: "Effective communicator, fostering effective collaboration and understanding within teams and workplace.",
+        skillUrl: "https://www.youtube.com/",
+        backgroundUrl: `./src/assets/skills/card-${Math.floor(Math.random() * 6) + 1}.svg`,
+        iconUrl: communication,
+        imageUrl: skillsBg,
+    },
+    {
+        id: "1",
+        title: "Teamwork",
+        text: "Proficient in teamwork, excelling in collaborative environments to drive collective success.",
+        backgroundUrl: `./src/assets/skills/card-${Math.floor(Math.random() * 6) + 1}.svg`,
+        skillUrl: "https://github.com/",
+        iconUrl: teamwork,
+        imageUrl: skillsBg,
+        light: true,
+    },
+    {
+        id: "2", 
+        title: "Agile & Goal Oriented",
+        text: "Highly adaptable and driven individual, skilled at navigating challenges with agility and maintaining a steadfast commitment to accomplishing goals.",
+        backgroundUrl: `./src/assets/skills/card-${Math.floor(Math.random() * 6) + 1}.svg`,
+        iconUrl: lightning,
+        imageUrl: skillsBg,
+    },
+    {
+        id: "3",
+        title: "Node.js & Express",
+        text: "Build some API using Node.js and Express",
+        backgroundUrl: `./src/assets/skills/card-${Math.floor(Math.random() * 6) + 1}.svg`,
+        iconUrl: nodejs,
+        imageUrl: skillsBg,
+        light: true,
+    },
+    {
+        id: "4",
+        title: "Golang",
+        text: "Currently learning golang and build some projects",
+        backgroundUrl: `./src/assets/skills/card-${Math.floor(Math.random() * 6) + 1}.svg`,
+        iconUrl: golang,
+        imageUrl: skillsBg,
+    },
+    {
+        id: "5",
+        title: "C & Python",
+        text: "I use C & Python for solving DSA problems, and i use Python for Machine Leaning and data manipulation.",
+        backgroundUrl: `./src/assets/skills/card-${Math.floor(Math.random() * 6) + 1}.svg`,
+        iconUrl: dsa,
+        imageUrl: skillsBg,
+    },
+    {
+        id: "6",
+        title: "Database",
+        text: "I've used Mysql, Postgresql and MongoDB, mostly for my web projects, and also use Oracle for my database class.",
+        backgroundUrl: `./src/assets/skills/card-${Math.floor(Math.random() * 6) + 1}.svg`,
+        iconUrl: database,
+        imageUrl: skillsBg,
+    },
+    {
+        id: "7",
+        title: "Virtualization",
+        text: `For providing an entire machine virtualization i used Qemu, KVM, VirtManager and Virtualbox. 
+            For my personal developing environment i use docker. For python i use venv and conda.`,
+        backgroundUrl: `./src/assets/skills/card-${Math.floor(Math.random() * 6) + 1}.svg`,
+        iconUrl: virtualization,
+        imageUrl: skillsBg,
+    },
+    {
+        id: "8",
+        title: "To Be Continued...",
+        text: "This list will continue, i will always keep learning and building more, as i fall more deeply inlove with computer.",
+        backgroundUrl: `./src/assets/skills/card-${Math.floor(Math.random() * 6) + 1}.svg`,
+        iconUrl: debug,
+        imageUrl: skillsBg,
+    },
 ];
 
-export const collabText =
-  "With smart automation and top-notch security, it's the perfect solution for teams looking to work smarter.";
-
-export const collabContent = [
-  {
-    id: "0",
-    title: "Seamless Integration",
-    text: collabText,
-  },
-  {
-    id: "1",
-    title: "Smart Automation",
-  },
-  {
-    id: "2",
-    title: "Top-notch Security",
-  },
-];
-
-export const collabApps = [
-  {
-    id: "0",
-    title: "Figma",
-    icon: figma,
-    width: 26,
-    height: 36,
-  },
-  {
-    id: "1",
-    title: "Notion",
-    icon: notion,
-    width: 34,
-    height: 36,
-  },
-  {
-    id: "2",
-    title: "Discord",
-    icon: discord,
-    width: 36,
-    height: 28,
-  },
-  {
-    id: "3",
-    title: "Slack",
-    icon: slack,
-    width: 34,
-    height: 35,
-  },
-  {
-    id: "4",
-    title: "Photoshop",
-    icon: photoshop,
-    width: 34,
-    height: 34,
-  },
-  {
-    id: "5",
-    title: "Protopie",
-    icon: protopie,
-    width: 34,
-    height: 34,
-  },
-  {
-    id: "6",
-    title: "Framer",
-    icon: framer,
-    width: 26,
-    height: 34,
-  },
-  {
-    id: "7",
-    title: "Raindrop",
-    icon: raindrop,
-    width: 38,
-    height: 32,
-  },
-];
-
-export const pricing = [
-  {
-    id: "0",
-    title: "Basic",
-    description: "AI chatbot, personalized recommendations",
-    price: "0",
-    features: [
-      "An AI chatbot that can understand your queries",
-      "Personalized recommendations based on your preferences",
-      "Ability to explore the app and its features without any cost",
-    ],
-  },
-  {
-    id: "1",
-    title: "Premium",
-    description: "Advanced AI chatbot, priority support, analytics dashboard",
-    price: "9.99",
-    features: [
-      "An advanced AI chatbot that can understand complex queries",
-      "An analytics dashboard to track your conversations",
-      "Priority support to solve issues quickly",
-    ],
-  },
-  {
-    id: "2",
-    title: "Enterprise",
-    description: "Custom AI chatbot, advanced analytics, dedicated account",
-    price: null,
-    features: [
-      "An AI chatbot that can understand your queries",
-      "Personalized recommendations based on your preferences",
-      "Ability to explore the app and its features without any cost",
-    ],
-  },
-];
-
-export const benefits = [
-  {
-    id: "0",
-    title: "Ask anything",
-    text: "Lets users quickly find answers to their questions without having to search through multiple sources.",
-    backgroundUrl: "./src/assets/benefits/card-1.svg",
-    iconUrl: benefitIcon1,
-    imageUrl: benefitImage2,
-  },
-  {
-    id: "1",
-    title: "Improve everyday",
-    text: "The app uses natural language processing to understand user queries and provide accurate and relevant responses.",
-    backgroundUrl: "./src/assets/benefits/card-2.svg",
-    iconUrl: benefitIcon2,
-    imageUrl: benefitImage2,
-    light: true,
-  },
-  {
-    id: "2",
-    title: "Connect everywhere",
-    text: "Connect with the AI chatbot from anywhere, on any device, making it more accessible and convenient.",
-    backgroundUrl: "./src/assets/benefits/card-3.svg",
-    iconUrl: benefitIcon3,
-    imageUrl: benefitImage2,
-  },
-  {
-    id: "3",
-    title: "Fast responding",
-    text: "Lets users quickly find answers to their questions without having to search through multiple sources.",
-    backgroundUrl: "./src/assets/benefits/card-4.svg",
-    iconUrl: benefitIcon4,
-    imageUrl: benefitImage2,
-    light: true,
-  },
-  {
-    id: "4",
-    title: "Ask anything",
-    text: "Lets users quickly find answers to their questions without having to search through multiple sources.",
-    backgroundUrl: "./src/assets/benefits/card-5.svg",
-    iconUrl: benefitIcon1,
-    imageUrl: benefitImage2,
-  },
-  {
-    id: "5",
-    title: "Improve everyday",
-    text: "The app uses natural language processing to understand user queries and provide accurate and relevant responses.",
-    backgroundUrl: "./src/assets/benefits/card-6.svg",
-    iconUrl: benefitIcon2,
-    imageUrl: benefitImage2,
-  },
-];
-
-export const socials = [
-  {
-    id: "0",
-    title: "Discord",
-    iconUrl: discordBlack,
-    url: "#",
-  },
-  {
-    id: "1",
-    title: "Twitter",
-    iconUrl: twitter,
-    url: "#",
-  },
-  {
-    id: "2",
-    title: "Instagram",
-    iconUrl: instagram,
-    url: "#",
-  },
-  {
-    id: "3",
-    title: "Telegram",
-    iconUrl: telegram,
-    url: "#",
-  },
-  {
-    id: "4",
-    title: "Facebook",
-    iconUrl: facebook,
-    url: "#",
-  },
-];
