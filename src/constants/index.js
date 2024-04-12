@@ -11,7 +11,9 @@ import {
     dsa,
     database,
     virtualization,
-    debug
+    debug,
+    mednology,
+    tobecontinued
 } from "../assets";
 
 export const navigation = [
@@ -51,20 +53,30 @@ export const projects = [
         text: "A Compiler",
         date: "-- 2024",
         status: "progress",
-        imageUrl: gobank,
+        imageUrl: tobecontinued,
     },
     {
         id: "3",
         title: "UNTI Center",
-        text: "Student Center for Infomatics Student UNSRI ",
+        text: "Student Center for Infomatics Student UNSRI",
         date: "-- 2024",
         status: "progress",
-        imageUrl: gobank,
+        imageUrl: tobecontinued,
+    },
+    {
+        id: "5",
+        title: "Mednology",
+        text: "API service for an medical app, made by using Node.js, Express & MongoDB",
+        date: "Mar 2023",
+        status: "done",
+        imageUrl: mednology,
+        projectUrl: "https://github.com/wreckitral/mednology.git",
+        colorful: true,
     },
     {
         id: "0",
         title: "GO BANK",
-        text: "API service for bank account management",
+        text: "API service for bank account management, made by using Golang",
         date: "Feb 2024",
         status: "done",
         imageUrl: gobank,
