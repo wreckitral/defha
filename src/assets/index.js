@@ -34,6 +34,8 @@ import skillCard6 from "./skills/card-6.svg";
 import gobank from "./projects/gobank.png"
 import todo from "./projects/todo.png"
 import toolbox from "./projects/toolbox.png"
+import mednology from "./projects/mednology.png"
+import tobecontinued from "./projects/tobecontinued.png"
 
 // devtools
 import terminal from "./devtools/terminal-depa.png"
@@ -67,6 +69,8 @@ export {
     skillCard5,
     skillCard6,
     gobank,
+    mednology,
+    tobecontinued,
     toolbox,
     todo,
     heroDepa,
